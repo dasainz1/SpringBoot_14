@@ -4,6 +4,7 @@ package com.sainz3.demo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.ui.Model;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -21,10 +22,11 @@ public class HomeController {
         director.setGenre("Sci Fi");
 
         // Now let's create a movie
-        Movie movie = new movie ();
+        Movie movie = new Movie();
         movie.setTitle("Star Movie");
         movie.setYear(2017);
         movie.setDescription("About Stars...");
+
 
         //Add the movie to an empty list
         Set<Movie> movies = new HashSet<Movie>();
